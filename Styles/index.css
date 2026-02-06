@@ -1,0 +1,118 @@
+/*Hero Section*/
+.hero {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  max-width: 75vw;
+  margin: auto;
+  padding: 30px;
+}
+
+.hero__profile-picture {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.hero__title {
+  font-size: clamp(35px, 3vw, 70px);
+}
+
+/*About Me Section*/
+.about-me {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  max-width: 80vw;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+.about-me__iframe {
+  width: 40vw;
+  aspect-ratio: 16 / 9;
+}
+
+/*My Projects Section*/
+.projects {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  font-size: 1.5em;
+}
+
+.projects__title {
+  font-family: Mario256;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 60px;
+  border: 3px solid black;
+  border-radius: 5%;
+  padding: 0.5em;
+}
+
+.project__image {
+  width: 50%;
+}
+
+.project__informations {
+  max-width: 400px;
+}
+
+.project__title {
+  font-family: Mario256;
+}
+
+#HomerImage {
+  position: absolute;
+  right: -280px;
+  bottom: -30px;
+  width: 35%;
+  transform: rotate(-20deg);
+  z-index: -1000;
+}
+
+/*Media Queries*/
+
+@media (max-width: 1280px) {
+  #HomerImage {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-me {
+    flex-direction: column;
+  }
+  .about-me__iframe {
+    width: 70vw;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__profile-picture {
+    width: 110%;
+  }
+
+  .about-me {
+    gap: 10px;
+  }
+
+  .project {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project__image {
+    width: 100%;
+  }
+}

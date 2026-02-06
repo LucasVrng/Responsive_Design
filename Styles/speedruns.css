@@ -1,0 +1,61 @@
+body {
+  color: yellow;
+  letter-spacing: 2px;
+}
+
+/*Cards Section*/
+.game {
+  max-width: 82%;
+  margin: 1em auto;
+  border-top: 2mm solid yellow;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  margin-bottom: 3rem;
+}
+
+.game__title {
+  grid-column: 1 / -1;
+}
+
+.speedrun-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: lightgray;
+}
+
+.speedrun-card__iframe {
+  margin: auto;
+  width: 85%;
+  aspect-ratio: 16 / 9;
+  padding: 10px;
+  background-color: yellow;
+}
+
+.speedrun-card header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 0.7rem;
+}
+
+.speedrun-card__wr-logo {
+  position: absolute;
+  width: 45px;
+  left: 4%;
+}
+
+.speedrun-card__category {
+  flex: 1;
+  font-family: Mario256;
+  margin: 6px;
+}
+
+.speedrun-card__time {
+  font-size: 1.5em;
+  font-family: Mario256;
+}

@@ -1,0 +1,5 @@
+@font-face {
+  font-family: Mario256;
+  src: local("Mario256"), url("Mario256.ttf");
+  font-display: swap;
+}

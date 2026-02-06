@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+header {
+  grid-row: 1;
+}
+
+main {
+  grid-row: 2;
+}
+
+.page-title,
+.game__title {
+  text-shadow: black 5px 5px 5px;
+  letter-spacing: 4px;
+}
+
+.page-title,
+.hero__title,
+.game__title {
+  text-align: center;
+  font-size: 3em;
+  font-family: Mario256;
+}
+
+/*Navbar Section*/
+.navbar {
+  background-color: yellow;
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar li {
+  display: flex;
+}
+
+.navbar a {
+  color: black;
+  font-family: Mario256;
+  font-size: clamp(19px, 2.5vw, 50px);
+  padding: 0.6em;
+  text-shadow: white 2px 2px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar a:hover:not(.active) {
+  color: grey;
+  transform: scale(1.1);
+}
+
+.navbar a.active {
+  color: grey;
+  transform: scale(1.2);
+  cursor: default;
+}
+
+/*Footer Section*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: yellow;
+  border-top: 3px solid black;
+  grid-row: 3;
+}
+
+footer img {
+  width: 45px;
+  padding: 22%;
+  transition: transform 0.2s ease-in-out;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+}
