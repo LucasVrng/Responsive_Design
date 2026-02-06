@@ -77,7 +77,8 @@ footer {
 
 footer img {
   width: 45px;
-  padding: 22%;
+  height: 45px;
+  padding: 16px;
   transition: transform 0.2s ease-in-out;
 }
 
